@@ -1,0 +1,105 @@
+<!--Exercise 2.5: Explore HTML5 Forms and Input Type
+form.html-->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<!--This shows the tittle on the top of the page-->
+	<title>$$$ Car Wash</title>
+</head>
+<body>
+<!--Form Body-Inside a table-->
+
+	<table border="5" cellpadding="10" bgcolor="#cccccc">
+		<tr>
+			<th colspan="2"><h1>$$$ Car Wash</h1>Even your poor car will look amazing!</th>
+		</tr>
+		<tr>
+			<th colspan="2" height="50"> <img src="road.jpg" alt="Road" ></th>
+		</tr>
+		<tr>
+			<th colspan="2">Register <u>now</u> and get a <mark>BIGGER</mark> discount!</th>
+		</tr>
+			
+			<form id="myForm" action="action_page.php" method="post">
+
+<!--Client Info-->
+		<tr>
+			<td>First name: </td>
+			<td><input type="text" name="name" id="name" autocomplete="on" required></td>
+		</tr>
+		<tr>
+			<td>Last name: </td>
+			<td><input type="text" name="lastname" autocomplete="on" required></td>
+		</tr>
+		<tr>
+			<td>Email: </td> 
+			<td><input type="text" name="email" autocomplete="on" required></td>
+		</tr>
+		<tr>
+			<td>Telephone number: </td> 
+			<td><input type="tel" name="phone"  autocomplete="on" required></td>
+		</tr>
+		<tr>
+			<td>Birthday: </td>
+			<td><input type="date" name="date" value="date"> </td>
+		</tr>
+		<tr>
+			<td>Password: </td> 
+			<td><input type="password" name="psw" required></td>
+		</tr>
+<!--Radio Type to pick just 1 option-->
+		<tr>
+			<td>Size of your car: </td>
+			<td><input type="radio" name="size" value="Small"> Small
+				<input type="radio" name="size" value="Medium"> Medium
+				<input type="radio" name="size" value="Large"> Large
+				<input type="radio" name="size" value="XLarge"> XLarge</td>
+		</tr>
+		<tr>
+			<td>Select the Color of your car: </td>
+			<td><input type="color" name="color" value="Color"> </td>
+		</tr>
+		<!--Checkbox Type to pick more than 1 option-->
+		<tr>
+			<td>Service(s): </td>
+			<td><input type="checkbox" name="service1" value="Service1"> Work Wash <strong>$12.99+TAX</strong> <br>
+				<input type="checkbox" name="service2" value="Service2"> Vacuum Seats and Carpets <strong>$14.99+TAX</strong> <br>
+				<input type="checkbox" name="service3" value="Service3"> Plastic Matts Power Washed <strong>$18.99+TAX</strong> <br>
+				<input type="checkbox" name="service4" value="Service4"> Trunk Vacuum <strong>$15.99+TAX</strong> <br>
+				<input type="checkbox" name="service5" value="Service5"> Thorough Cleaning Door <strong>$17.99+TAX</strong></td>
+		</tr>
+		<tr>
+<!--Datalist Type to pick just 1 option, similar like Radio Button but is going to show the options in a droplist-->
+			<td>When would you like to come?</td>
+			<td>  <input list="day" name="day">
+				<datalist id="day">
+				<option value="Monday">
+				<option value="Tuesday">
+				<option value="Wednesday">
+				<option value="Thursday">
+				<option value="Friday">
+				</datalist></td>
+		</tr>
+<!--Calling rows and cols will give more space to write comments-->
+		<tr>
+			<td>Comments? </td> 
+			<td><textarea rows="5" cols="50">...</textarea></td>
+		</tr>
+<!--Submit button-->	
+		<tr>
+
+			<td colspan="2" align="center"><input type="Submit" value="Submit"></td>
+			
+		</tr>
+
+
+	</form>
+	
+	</table>
+
+	
+	</body>
+
+</html>
